@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
 
 export default function Home() {
   return (
-    <div>
-      
-    </div>
-  )
+    <>
+      <div className="min-h-screen bg-white ">
+
+
+      </div>
+    </>
+  );
 }
