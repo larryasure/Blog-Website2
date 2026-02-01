@@ -10,6 +10,7 @@ import About from "./Pages/About";
 import Write from "./Pages/Write";
 import Category from "./Pages/Category";
 import BlogDetails from "./Pages/BlogDetails";
+import CategoryDetails from "./Pages/CategoryDetails";
 
 const router = createBrowserRouter([
   {
@@ -17,9 +18,10 @@ const router = createBrowserRouter([
     Component: Rootlayout,
     children: [
       { index: true, Component: Home },
-      { path: "blog", Component: Blogs },
-      { path: "blog/:slug", Component: BlogDetails },
-      { path: "category/:slug", Component: Category },
+      { path: "blogs", Component: Blogs },
+      { path: "blogs/:slug", Component: BlogDetails },
+      { path: "category/:slug", Component: CategoryDetails },
+      { path: "category", Component: Category },
       { path: "about", Component: About },
       { path: "write", Component: Write },
       { path: "*", Component: Error404 },

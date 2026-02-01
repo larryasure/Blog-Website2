@@ -23,7 +23,7 @@ export default function Navbar() {
             <li>Blogs</li>
           </Link>
 
-          <Link to={"/blogs"}>
+          <Link to={"/category"}>
             <li>Categories</li>
           </Link>
 
